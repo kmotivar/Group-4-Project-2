@@ -64,7 +64,7 @@ body {
 }
 
 .ques {
-    width: 33.3%;
+    width: 30%;
     font-weight: bold;
     font-size: 20px;
     padding: 8%;
@@ -72,7 +72,7 @@ body {
 }
 
 .ans {
-    width: 33.3%;
+    width: 40%;
     font-weight: bold;
     font-size: 20px;
     padding: 8%;
@@ -81,11 +81,11 @@ body {
 }
 
 .img {
-    width: 33.3%;
+    width: 30%;
 }
 
 img {
-    height: 35em;
-    width: 28em;
+    height: 80%;
+    width: 100%;
     padding: 10%;
 }
