@@ -1,0 +1,52 @@
+/* Basic CSS*/
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+  
+body {
+    margin: 0 auto;
+}
+
+/* Navigation bar */
+.nav {
+    background-color: black;
+    position: sticky;
+    top:0;
+}
+    
+.f-rt {
+    float: right; 
+}
+      
+.f-lt {
+    float: left;
+}
+      
+.ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+  
+.menu {
+    list-style-type: none;
+    color: black;
+    margin: 1px 40;
+    text-decoration: none;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    padding: 15px;
+}
+
+/* Container */
+.container {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 500px;
+    column-gap: 20px;
+    margin: 100px 225px;
+}
