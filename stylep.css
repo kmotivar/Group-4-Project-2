@@ -48,6 +48,21 @@ body {
     font-family: Optima;
 }
 
+ul {
+    list-style: none;
+}
+
+a > li {
+    display: inline-block;
+    color: #ce8464;
+    text-decoration: underline;
+    text-underline-position: under;
+    letter-spacing: 2px;
+    padding: 15px;
+}
+
+
+
 /* For skills & Education */
 .grid-container {
     display: grid;
@@ -117,6 +132,8 @@ body {
 .imga {
     width: 100%;
     height: 8em;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px black;
 }
 
 .t1 {
@@ -131,5 +148,12 @@ span {
     border: 3px grey solid;
     border-radius: 20px;
     padding: 10px;
+    box-shadow: 0 5px 10px rgb(46, 139, 87);
 }
   
+.high {
+    box-shadow: 0 2px 2px black;
+    border-radius: 10px;
+    background-color: #d6f7f7;
+
+}
