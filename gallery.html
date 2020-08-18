@@ -4,7 +4,7 @@
         <link rel="stylesheet" type="text/css" href="styleg.css">
         <title>Gallery</title>
     </head>
-    <body style="background-color: #f8e3e3;">
+    <body onload="icons()" style="background-color: #f8e3e3;">
         
         <nav>
             <div class="menu-bar nav">
@@ -29,79 +29,15 @@
                 <li>Practice Net Sessions across the world</li>
                 <p style="font-size: 38px;">Gallery:</p>
             </div>
-            <!-- These images have taken from https://www.gettyimages.ca and www.google.com -->
+            <!-- The images are taken from https://www.gettyimages.ca and www.google.com -->
+            <!-- Images will come here -->
             <div class="item1">
-                <img class="item2 mydiv" onmouseover="icons(this.id);" onClick="fun(this.id, this.src);" id="a1" src="images/g1.jpg">
-                <img class="item2" onClick="fun(this.id, this.src);"id="a2" src="images/g2.jpg">
-                <img class="item2" onClick="fun(this.id, this.src);" id="a3" src="images/g3.jpg">
-                <img class="item2" onClick="fun(this.id, this.src);" id="a4" src="images/g4.jpg">
-                <img class="item2" onClick="fun(this.id, this.src);" id="a5" src="images/g5.jpg">
-                <img class="item2" onClick="fun(this.id, this.src);" id="a6" src="images/g6.jpg">
-                <img class="item2" onClick="fun(this.id, this.src);" id="a7" src="images/g7.jpg">
-                <img class="item2" onClick="fun(this.id, this.src);" id="a8" src="images/g8.jpg">
-                <img class="item2" onClick="fun(this.id, this.src);" id="a9" src="images/g9.jpg">
-                <img class="item2" onClick="fun(this.id, this.src);" id="a10" src="images/g10.jpg">
-                <img class="item2" onClick="fun(this.id, this.src);" id="a11" src="images/g11.jpg">
-                <img class="item2" onClick="fun(this.id, this.src);" id="a12" src="images/g12.jpg">
-                <img class="item2" onClick="fun(this.id, this.src);" id="a13" src="images/g13.jpg">
-                <img class="item2" onClick="fun(this.id, this.src);" id="a14" src="images/g14.jpg">
-                <img class="item2" onClick="fun(this.id, this.src);" id="a15" src="images/g15.jpg">
-                <img class="item2" onClick="fun(this.id, this.src);" id="a16" src="images/g16.jpg">
-                <img class="item2" onClick="fun(this.id, this.src);" id="a17" src="images/g17.jpg">
-                <img class="item2" onClick="fun(this.id, this.src);" id="a18" src="images/g18.jpg">
-                <img class="item2" onClick="fun(this.id, this.src);" id="a19" src="images/g19.jpg">
-                <img class="item2" onClick="fun(this.id, this.src);" id="a20" src="images/g20.jpg">
-                <img class="item2" onClick="fun(this.id, this.src);" id="a21" src="images/g21.jpg">
-                <img class="item2" onClick="fun(this.id, this.src);" id="a22" src="images/g22.jpg">
-                <img class="item2" onClick="fun(this.id, this.src);" id="a23" src="images/g23.jpg">
-                <img class="item2" onClick="fun(this.id, this.src);" id="a24" src="images/g24.jpg">
-                <img class="item2" onClick="fun(this.id, this.src);" id="a25" src="images/g25.jpg">
-                <img class="item2" onClick="fun(this.id, this.src);" id="a26" src="images/g26.jpg">
-                <img class="item2" onClick="fun(this.id, this.src);" id="a27" src="images/g27.jpg">
-                <img class="item2" onClick="fun(this.id, this.src);" id="a28" src="images/g28.jpg">
-                <img class="item2" onClick="fun(this.id, this.src);" id="a29" src="images/g29.jpg">
-                <img class="item2" onClick="fun(this.id, this.src);" id="a30" src="images/g30.jpg">
-
-            
+                <div id="here"></div>
             </div>
-        </div>
-        <div id="here" style="background-color: grey;"></div>
-        
-        <script>
-            function icons(i) {
-                document.getElementById(i).innerHTML = text;
-            }
-            
-            var count = 0;
-            function fun(x, s) {
-                count++;
-                document.getElementById("here").innerHTML = "<img id='q1' onclick='fun(this.id, this.src)' src='" + s + "'>";
-                hide();
-                switch(count) {
-                    case 1: 
-                        document.getElementById('q1').style.cssText = 'position: fixed; top: 35%; left: 35%; width: 40%; height: 40%;';
-                        break;
-                    case 2:
-                        document.getElementById('q1').style.cssText = 'position: fixed; top: 25%; left: 25%; width: 55%; height: 55%;';
-                        break;
-                    case 2:
-                        document.getElementById('q1').style.cssText = 'position: fixed; top: 25%; left: 25%; width: 75%; height: 75%;';
-                        break;
-                    case 3:
-                        document.getElementById('q1').style.cssText = 'position: fixed; top: 0; left: 0; width: 100%; height: 100%;';
-                        break;
-                    default:
-                        document.getElementById('q1').style.cssText = 'display: none;';
-                        count=0;
-                        document.getElementById('cont').style.display="block";
-                        break;
-                }
-            }
 
-            function hide() {
-                document.getElementById('cont').style.display="none";
-            }
-        </script>
+        </div>
+        <!-- Zoom image will come here -->
+        <div id="zoom"></div>
         <script type="text/javascript" src="script.js"></script>
     </body>
 </html>

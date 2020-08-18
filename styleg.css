@@ -68,5 +68,61 @@ body {
     font-size: 50px;
 }
 
+/* To display icons, guidance taken from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_icon */
+.overlay {
+    cursor: pointer;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    position: absolute;
+    bottom: 50%;
+    overflow: hidden;
+    background: rgb(245, 245, 245, 0.5);
+}
 
-  
+.rel {
+    position: relative;
+}
+
+.rel:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+
+/* Four icons */
+i.top {
+    content: url(images/top.svg);
+    width: 1em;
+    height: 1em;
+}
+
+i.left {
+    content: url(images/left.svg);
+    width: 1em;
+    height: 1em;
+}
+
+i.right {
+    content: url(images/right.svg);
+    width: 1rem;
+    height: 1em;
+}
+
+i.bottom {
+    content: url(images/bottom.svg);
+    width: 1em;
+    height: 1em;
+}
+
+/* Image bottom layout */
+.ig-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Icon size */
+i {
+    font-size: 20px;
+}
