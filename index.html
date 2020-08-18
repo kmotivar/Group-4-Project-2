@@ -8,22 +8,64 @@
         <nav>
             <div class="menu-bar nav">
                 <ul class="ul">
-                    <li class="menu f-lt">LOGO</li>
-                    <li><a href="" class="menu f-rt">GALLERY</a></li>  
-                    <li><a href="" class="menu f-rt">MEMBERS</a></li>
+                    <li class="f-lt"><a href="index.html"><canvas width="50" height="50" style="border: 3px solid yellowgreen"></canvas></a></li>
+                    <li><a href="gallery.html" class="menu f-rt">GALLERY</a></li>  
+                    <li><a href="members.html" class="menu f-rt">MEMBERS</a></li>
                 </ul>
             </div>
         </nav>
-        <content class="container">
-            <div>
-                sjadhksdhaksuhdiush du heiufiuefiueg fiuaewg fue guewag yfg yaeg uaeg fuyegw
-            </div>
-            <div>
-                sjadhksdhaksuhdiush du heiufiuefiueg fiuaewg fue guewag yfg yaeg uaeg fuyegw
-            </div>
-            <div>
-                sjadhksdhaksuhdiush du heiufiuefiueg fiuaewg fue guewag yfg yaeg uaeg fuyegw
-            </div>
+        <content class="c">
+            <h1> For Every complicated problem there is always a solution and here we are to solve your problems</h1>
+
+       
+            <h1>Our Services</h1>
+                  <div class="box">
+                        <div class="partition">
+                            <h2>Digital Marketing</h2><br>
+                          <p> 8bitmultimedia has been delivering effective and innovative designs and digital marketing plans for variety of clients in different sectors. We have a strong and well-organized marketing team who always believe in continuous learning, discovering new ideas and implementing innovative digital marketing strategies.
+                         </p>    
+                        </div>
+                        <div class="partition">
+                        <h2> Graphic Design</h2><br>
+                        <p>  
+                        8bitmultimedia is known for development of graphics ranging from brochures, logos and banners for large as well as small business organizations using the latest technologies in the most creative way as possible. We believe in 3-D that is Discuss, design and deliver.
+                        </p>
+                        </div>
+                        <div class="partition">
+                            <h2>UX Design</h2>
+                        <p> We listen with the intent to understand that helps us create sites that look gorgeous, are technically excellent and meet their objectives. We can advise you on the best ways to reach and engage with your audience utilising the complete spectrum of digital media.</p>
+                        </div>
+                        <div class="partition">
+                            <h2>Brand Identity</h2>
+                            <p> We help a wide range of businesses realise a greater awareness and demand for their offerings. The studio comprises professionals with expertise in Brand Strategy, Graphic Design and Marketing Communications. First, we engage with the client, then discuss and finally execute.</p>
+                        </div>
+                        <div class="partition">
+                            <h2>Product Strategy</h2>
+                           <p> We work with start-ups and global fortune companies across different industries in the areas of market penetration, defining, streamlining and executing marketing strategies, enabling sales teams and creating demand through innovative marketing initiatives.</p>
+                        </div>
+                        <div class="partition">
+                            <h2>Web Development</h2>
+                            <p>As your digital marketing partner, we at 8bitmultimedia focus to plan adding value to your online presence. Being a website design and development company, we use effective and latest design techniques to transform your web information to result oriented websites.</p>
+                        </div> 
+                  </div>
         </content>
+        <script>
+            var c = document.querySelector("Canvas");
+            var ctx = c.getContext("2d");
+           
+            ctx.font = "20px rogfonts";
+            var gradient = ctx.createLinearGradient(0, 0, c.width, 0);
+            gradient.addColorStop("0", "red");;
+            gradient.addColorStop("1.0", "yellow");
+            ctx.strokeStyle = gradient;
+            ctx.strokeText("KJS",8,15);
+
+            ctx.fillStyle = "#c82124";
+            ctx.beginPath();
+            ctx.arc(24, 34, 15, 10, 20 * Math.PI);
+            ctx.closePath();
+            ctx.fill();
+
+        </script>
     </body>
 </html>
