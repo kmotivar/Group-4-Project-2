@@ -8,11 +8,11 @@ var gradient = ctx.createLinearGradient(0, 0, c.width, 0);
 gradient.addColorStop("0", "violet");;
 gradient.addColorStop("1.0", "yellow");
 ctx.strokeStyle = gradient;
-ctx.strokeText("KJS",8,15);
+ctx.strokeText("KJS",8,20);
 
 //circle
 ctx.fillStyle = "#c82124";
 ctx.beginPath();
-ctx.arc(24, 34, 15, 10, 20 * Math.PI);
+ctx.arc(24, 34, 8, 0, 2 * Math.PI);
 ctx.closePath();
 ctx.fill();
