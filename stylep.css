@@ -11,6 +11,37 @@ body {
     text-align: center;
 }
 
+/* Navigation bar */
+.nav {
+    background-color: black;
+    position: sticky;
+    top:0;
+}
+    
+.f-rt {
+    float: right; 
+}
+      
+.f-lt {
+    float: left;
+}
+      
+.ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+  
+.menu {
+    list-style-type: none;
+    color: black;
+    margin: 1px 40;
+    text-decoration: none;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    padding: 15px;
+}
+
 .container {
     display: flex;
     flex-flow: wrap;

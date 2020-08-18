@@ -14,10 +14,8 @@
                 </ul>
             </div>
         </nav>
-        <content class="c">
+        <content class="">
             <h1> For Every complicated problem there is always a solution and here we are to solve your problems</h1>
-
-       
             <h1>Our Services</h1>
                   <div class="box">
                         <div class="partition">
@@ -49,23 +47,6 @@
                         </div> 
                   </div>
         </content>
-        <script>
-            var c = document.querySelector("Canvas");
-            var ctx = c.getContext("2d");
-           
-            ctx.font = "20px rogfonts";
-            var gradient = ctx.createLinearGradient(0, 0, c.width, 0);
-            gradient.addColorStop("0", "red");;
-            gradient.addColorStop("1.0", "yellow");
-            ctx.strokeStyle = gradient;
-            ctx.strokeText("KJS",8,15);
-
-            ctx.fillStyle = "#c82124";
-            ctx.beginPath();
-            ctx.arc(24, 34, 15, 10, 20 * Math.PI);
-            ctx.closePath();
-            ctx.fill();
-
-        </script>
+        <script type="text/javascript" src="script.js"></script>
     </body>
 </html>

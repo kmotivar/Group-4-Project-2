@@ -15,6 +15,7 @@ body {
     background-color: black;
     position: sticky;
     top:0;
+    width: 100%;
 }
     
 .f-rt {
@@ -49,11 +50,11 @@ body {
     align-items: stretch;
 }
 .grey {
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(211, 235, 243);
 }
 
 .black {
-    background-color: white;
+    background-color: rgb(245, 223, 226);
 }
 
 .header {
