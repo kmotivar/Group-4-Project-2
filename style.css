@@ -88,7 +88,7 @@ h2 {
 }
 
 .back {
-    background-image: url('/images/back.jpg');
+    background-image: url('./images/back.jpg');
     background-color: rgb(7, 31, 9);
     background-blend-mode: overlay;
     background-repeat: no-repeat;
